@@ -1,0 +1,9 @@
+<div (click)="getCitiWeatherInfo()">
+    <img alt='Location' class='card-img-top img-fluid' src='../../../assets/Images/loc.jpeg'>
+    <div class='card-block'>
+        <h5 class='card-title'>{{city.name}}</h5>
+        <p class='card-text mb-1'>Temperature: <strong class="text-danger">{{ city?.main.temp | round}} ºC</strong></p>
+        <p class='card-text mb-1'>Sunrise: <strong class="text-warning">{{ getDate(city?.sys.sunrise) | date:'shortTime' }}</strong></p>
+        <p class='card-text mb-1'>Sunset: <strong class="text-success">{{ getDate(city?.sys.sunset) | date:'shortTime' }}</strong></p>
+    </div>
+</div>

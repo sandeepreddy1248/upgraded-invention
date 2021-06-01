@@ -1,0 +1,7 @@
+<div class='card-group row px-3'>
+  <div class="col" *ngFor="let city of cityData">
+    <div class='card bg-light mt-2 p-2'>
+      <app-city-weather [city]="city" (emitGetCitiWeatherInfo)="getCitiWeatherInfo(city)"></app-city-weather>
+    </div>
+  </div>
+</div>

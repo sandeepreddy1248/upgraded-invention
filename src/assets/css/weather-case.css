@@ -1,0 +1,36 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+.bg-blue-dark {
+  background-color: #002340 !important;
+}
+
+div.forecast div {
+  padding-bottom: 5px;
+}
+
+div.forecast div i.owf {
+  font-size: 2.2em;
+}
+
+h4.card-title {
+  padding-top: 5px;
+}
+
+
+

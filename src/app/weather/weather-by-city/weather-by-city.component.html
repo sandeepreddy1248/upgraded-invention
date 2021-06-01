@@ -1,0 +1,13 @@
+<div class="container">
+    <h4 class="card-title">
+      <small>{{name}}</small>
+    </h4>
+    <div class="card-block row align-items-center">
+      <div class="forecast row col-md-12">
+        <div class="chart-container canvas-parent">
+          <highcharts-chart *ngIf="chartOptions && chartOptions.series.length" [Highcharts]="Highcharts" [options]="chartOptions"></highcharts-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  
